@@ -44,6 +44,11 @@ app.get('/',(req, res)=>{  // the '/' means the root of the app (url)
 
   });
 });
+app.get('/projects',(req, res)=>{
+  res.render('projects.hbs',{
+    pageTitle:'Projects'
+  });
+});
 
 app.get('/about',(req,res)=>{
   res.render('about.hbs',{
